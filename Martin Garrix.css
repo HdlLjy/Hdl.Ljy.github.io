@@ -1,0 +1,2176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: black;
+    height: 100%;
+    overflow-x: hidden; /* 避免横向滚动 */
+}
+.headera {
+    background-color: rgb(63, 64, 66);
+    padding-top: 5px;
+    width: 100%;
+    height: 35px;
+    border-bottom: solid 1px rgb(90, 90, 90);
+}
+.headerb {
+    margin: 0 auto;
+    width: 65%;
+    height: 28px;
+}
+.headerb p {
+    text-align: center;
+    font-size: 26px;
+    line-height: 28px;
+    color: white;
+    font-weight: 700;
+}
+.navig {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(32, 32, 32);
+    padding-top: 14px;
+    z-index: 99;
+}
+.navb {
+    position: absolute;
+    top: 12px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+.navb1 {
+    position: absolute;
+    top: 16px;
+    left: 175px;
+    width: 136px;
+    height: 32px;
+    background-color: rgb(49, 49, 49);
+    line-height: 32px;
+    border-radius: 12px;
+    text-align: center;
+}
+.b1 {
+    position: relative;
+    top: -13px;
+    margin: 0 auto;
+    width: 1400px;
+    height: 64px;
+}
+.ys1 {
+    color: white;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        #ff0000, #ff9900, #ffff00, #33cc33,
+        #3399ff, #6633ff, #cc33ff, #ff0000
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: flow 4s linear infinite;
+}
+@keyframes flow {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.navb2 {
+    position: absolute;
+    top: 18px;
+    left: 810px;
+    line-height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    transition: all 1s;
+}
+.navb2:hover {
+    color: rgb(255, 31, 169);
+    transition: all 1s;
+}
+.navb3 {
+    position: absolute;
+    top: 18px;
+    left: 945px;
+    line-height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    transition: all 1s;
+}
+.navb3:hover {
+    color: rgb(31, 46, 255);
+    transition: all 1s;
+}
+.menu {
+    position: absolute;
+    top: 9px;
+    left: 1035px;
+}
+.title {
+    text-align: center;
+    padding-top: 9px;
+    cursor: pointer;
+    color: white;
+    font-size: 21px;
+    transition: all 1s;
+}
+.title:hover {
+    color: #cc33ff;
+    transition: all 1s;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+.list li {
+    width: 100px;
+    height: 40px;
+    border-bottom: solid saddlebrown 1px;
+    text-align: center;
+    line-height: 38px;
+}
+
+.menu:hover .list {
+    width: 100px;
+    height: 240px;
+    border-radius: 10px;
+}
+.l1:hover {
+    background-color: pink;
+    transition: all 0.8s;
+}
+.l2:hover {
+    background-color: rgb(194, 17, 170);
+    transition: all 0.8s;
+}
+.l3:hover {
+    background-color: rgb(10, 108, 238);
+    transition: all 0.8s;
+}
+.l4:hover {
+    background-color: rgb(2, 225, 255);
+    transition: all 0.8s;
+}
+.l5:hover {
+    background-color: rgb(255, 8, 8);
+    transition: all 0.8s;
+}
+.l6:hover {
+    background: linear-gradient(45deg,pink,rgb(194,17,170),rgb(10, 108, 238),rgb(2, 225, 255),red);
+    transition: all 0.8s;
+}
+.navb4 {
+    position: absolute;
+    top: 18px;
+    left: 1140px;
+    line-height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    transition: all 1s;
+}
+.navb4:hover {
+    color: aqua;
+    transition: all 1s;
+}
+.navb5 {
+    position: absolute;
+    top: 18px;
+    left: 1260px;
+    line-height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    transition: all 1s;
+}
+.navb5:hover {
+    color: rgb(0, 99, 30);
+    transition: all 1s;
+}
+
+/* 头部背景 */
+.headbgmx {
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* 作为所有子元素绝对定位的参考 */
+    overflow: hidden; /* 防止内容溢出 */
+}
+
+/* 背景图片样式 */
+.headbgmx img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.headbgmx img:nth-child(1) {
+    z-index: 1;
+}
+.headbgmx img:nth-child(2) {
+    z-index: 2;
+}
+
+.headbgmx_box1, .headbgmx_box2, .headbgmx_box3 {
+    position: absolute; 
+    z-index: 4; 
+    line-height: 40px; 
+    text-align: center; 
+    opacity: 1;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headbgmx_box1 {
+    width: 760px;
+    height: 130px;
+    /* 取消原有定位，改用通用居中样式 */
+    line-height: 130px; /* 适配80px高度的垂直居中 */
+}
+.headbgmx_box1 span {
+    color: white;
+    font-size: 136px;
+    font-weight: 700;
+}
+.headbgmx_box2 {
+    top: 63%;
+    width: 340px;
+    height: 60px;
+    transform: translate(-50%, calc(-50% + 100px));
+    color: white;
+    line-height: 60px;
+}
+.headbgmx_box2 span {
+    color:white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.headbgmx_box3 {
+    top: 70%;
+    width: 340px;
+    height: 60px;
+    transform: translate(-50%, calc(-50% + 100px));
+    color: white;
+    line-height: 60px;
+}
+.headbgmx_box3 span {
+    color:white;
+    font-size: 48px;
+    font-weight: 700;
+}
+.home1 {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1400px;
+    height: 820px;
+}
+.fz1 {
+    position: absolute;
+    top: 60px;
+    color: white;
+    font-size: 50px;
+}
+.fz2 {
+    position: absolute;
+    top: 160px;
+    color: white;
+    font-size: 60px;
+    font-family: cursive;
+}
+.fz3 {
+    position: absolute;
+    top: 250px;
+    color: white;
+    font-size: 70px;
+    font-family:"STXingkai", "华文行楷", cursive;
+}
+.fz4 {
+    position: absolute;
+    top: 350px;
+    color: white;
+    font-size:52px;
+}
+.resize-img {
+    position: absolute;
+    top: 100px;
+    left: 1030px;
+    width: 260px;
+    height: auto;
+    transform: rotate(20deg);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+    z-index: 0;
+}
+.resize-img:hover,.resize-imga {
+    box-shadow: #ea06ff 20px 20px 60px;
+    z-index: 2;
+    transform: rotate(20deg) scale(1.04);
+}
+.resize-img2 {
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    width: 260px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: #09b1db 20px 20px 60px;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.resize-img2:hover,.resize-img2b {
+    box-shadow: #2403e4 20px 20px 60px;
+    transition: all 1s ease;
+    transform: scale(1.04);
+}
+.resize-img3 {
+    position: absolute;
+    top: 100px;
+    left: 760px;
+    width: 300px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 1.5s ease;
+    z-index: 0;
+}
+.resize-img3:hover,.resize-img3b {
+    box-shadow: #25fa85 25px 30px 60px;
+    z-index: 2;
+    transform: rotate(-20deg) scale(1.06);
+}
+.boxli {
+    position: absolute;
+    top: 490px;
+    width: 1400px;
+    color: white;
+}
+.boxli ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.boxli ul li {
+    font-size: 140px;
+    color: white;
+    transform-origin: center center;
+}
+.boxli ul li:nth-child(n+2) {
+    margin-left: 85px;
+}
+.boxli ul li:nth-child(5) {
+    padding-bottom: 18px;
+    font-weight: bold;
+    animation: rotateColorChange 4s linear infinite;
+}
+@keyframes rotateColorChange {
+    0% { transform: rotate(0deg); color: #d15eee; }
+    15% { transform: rotate(52deg); color: #00ff00; }
+    30% { transform: rotate(104deg); color: #0000ff; }
+    45% { transform: rotate(155deg); color: #ff00bf; }
+    60% { transform: rotate(206deg); color: #00b7ff; }
+    75% { transform: rotate(257deg); color: #ffae00; }
+    90% { transform: rotate(320deg); color: #2f00ff; }
+    100% { transform: rotate(360deg); color: #ff0000; }
+}
+
+/* ====================== 【加号专属大爆炸粒子】 ====================== */
+.big-particle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999 !important;
+    animation: big-explode 1.4s ease-out forwards;
+    transform: translate(-50%, -50%);
+}
+@keyframes big-explode {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--tx), var(--ty)) scale(0);
+    }
+}
+
+.xunyan {
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 380px;
+    height: 68px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+    text-shadow: #ff00b3 0px 0px 60px;
+    font-size: 30px;
+}
+
+.xunyan p {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 40px;
+    width: 50px;
+    text-align: center;
+}
+
+.xunyan p:last-child {
+    transform: rotate(45deg);
+    display: inline-block;
+    font-size: 95px;
+    font-weight: 500;
+}
+.img-preview {
+    width: 808px;
+    height: 558px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: block;
+    overflow: visible;
+}
+.img-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.6));
+    transition: filter 0.5s ease;
+    border-radius: 20px;
+}
+.home2 {
+    width: 100%;
+    height: 557px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.imgbg {
+    width: 808px;
+    height: 558px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 1;
+    display: none;
+}
+.ztbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ax-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%; /* 确保铺满页面 */
+}
+/* 核心优化：滚动容器样式 */
+.ax1, .ax2, .ax3 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden; /* 隐藏溢出 */
+    padding: 10px;
+    position: relative;
+}
+
+/* 滚动容器 - 统一基础样式 */
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: max-content;
+    /* 大幅降低速度：基础时长改为180秒（3分钟） */
+    animation-duration: 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running; /* 默认运行 */
+}
+
+/* ax1 向左滚动（保持不变） */
+.ax1 .scroll-container {
+    animation-name: scrollLeft;
+}
+/* ax2 改为向右滚动 */
+.ax2 .scroll-container {
+    animation-name: scrollRight;
+    animation-duration: 190s; /* 稍慢一点 */
+}
+
+/* ax3 改为向左滚动 */
+.ax3 .scroll-container {
+    animation-name: scrollLeft;
+    animation-duration: 200s; /* 最慢 */
+}
+
+/* 滚动动画关键帧 - 精准控制位移，避免跳变 */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* 位移为容器宽度的50%，实现无缝循环 */
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 统一隐藏滚动条 */
+.ax1::-webkit-scrollbar,
+.ax2::-webkit-scrollbar,
+.ax3::-webkit-scrollbar {
+    display: none;
+}
+
+/* 原有文字样式完全保留 */
+.bx1, .bx2, .bx3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px; 
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 100%;
+    line-height: 1;
+    padding: 0;
+}
+
+.bx1 span, .bx2 span, .bx3 span {
+    font-size: 85px;
+    white-space: nowrap;
+    word-break: keep-all;
+    flex-shrink: 0;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    line-height: 1;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    transition: color 0.5s ease, -webkit-text-stroke 0.5s ease;
+    transition: color 0.5s ease, text-stroke 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+
+.bx1 span:hover, .bx2 span:hover, .bx3 span:hover {
+    color: #ffffff; /* 仅变为纯白色 */
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+}
+.maip{
+    position: absolute;
+    top: 540px;
+    left: 47%;
+    text-align: center;
+    width: 120px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 38px;
+    background-color:white;
+    border-radius: 5px;
+    z-index: 5;
+    display: none;
+}
+.maip a{
+    color: black;
+}
+.Grx {
+    margin: 0 auto;
+    margin-top: 180px;
+    position: relative;
+    width: 1400px;
+    height: 680px;
+    }
+/* 统一所有卡片基础样式 */
+.gr1, .gr2, .gr3, .gr4, .gr5, .gr6 {
+    position: absolute;
+    width: 400px;
+    height: 260px;
+    background-color: rgb(0, 21, 76); /* 初始背景色 */
+    border-radius: 20px;
+    /* 关键：添加背景渐变和渐变 */
+    background-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                            rgba(232, 42, 123, 0) 0%, 
+                            rgba(232, 42, 123, 0) 0%);
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+    /* 防止内容被溢出 */
+    overflow: hidden;
+    /* 文字垂直居中容器设置 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    }
+        
+/* 各个卡片的位置定位 */
+.gr1 { top: 20px; left: 20px; }
+.gr2 { top: 20px; left: 500px; }
+.gr3 { top: 20px; left: 980px; }
+.gr4 { top: 360px; left: 20px; }
+.gr5 { top: 360px; left: 500px; }
+.gr6 { top: 360px; left: 980px; }
+
+/* 文字样式 - 修复垂直居中 */
+.gr1 p, .gr2 p, .gr3 p, .gr4 p, .gr5 p, .gr6 p {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    /* 文字层级高于背景效果 */
+    position: relative;
+    z-index: 1;
+}
+/* 各卡片文字大小 */
+.gr1 p { font-size: 26px; }
+.gr2 p { font-size: 30px; }
+.gr3 p { font-size: 36px; }
+.gr4 p { font-size: 40px; }
+.gr5 p { font-size: 31px; }
+.gr6 p { font-size: 40px; }
+
+/* 鼠标悬浮效果 - 调大扩散范围 */
+.gr1:hover, .gr2:hover, .gr3:hover, .gr4:hover, .gr5:hover, .gr6:hover {
+    /* 悬浮时背景色变为 rgb(0, 71, 253) */
+    background-color: rgb(0, 71, 253);
+    /* 调大扩散范围（调整百分比）+ 扩散色为 rgb(232,42,123) */
+    background-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                            rgba(232, 42, 123, 0.9) 0%, 
+                            rgba(232, 42, 123, 0.6) 60%, 
+                            rgba(232, 42, 123, 0) 85%);
+}
+
+/* ====================== 【卡片专属小粒子】 ====================== */
+.card-particle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(232, 42, 123, 0.7);
+    pointer-events: none;
+    z-index: 0;
+    animation: card-explode 0.8s ease-out forwards;
+}
+@keyframes card-explode {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.gr1:hover{
+        box-shadow: 15px 15px 20px rgb(224, 47, 106);
+        transition: all 1s;
+}
+.gr2:hover{
+        box-shadow: 15px 15px 20px rgb(224, 47, 106);
+        transition: all 1s;
+}
+.gr3:hover{
+        box-shadow: 15px 15px 20px rgb(224, 47, 106);
+        transition: all 1s;
+}
+.gr4:hover{
+        box-shadow: 15px 15px 20px rgb(224, 47, 106);
+        transition: all 1s;
+}
+.gr5:hover{
+        box-shadow: 15px 15px 20px rgb(224, 47, 106);
+        transition: all 1s;
+}
+.gr6:hover{
+        box-shadow: 15px 15px 20px rgb(224, 47, 106);
+        transition: all 1s;
+}
+.jgjs{
+    position: relative; 
+    margin: 40px auto 0;
+    width: 1400px;
+    height: 800px;
+    overflow: hidden;
+}
+.jgjs p{
+    text-align: center;
+    font-size: 52px;
+    color: white;
+    text-shadow: 14px 14px 10px pink;
+    position: relative;
+    z-index: 10;
+    padding-top: 20px;
+}
+.stage-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 340px;
+    z-index: 5;
+    object-fit: cover;
+}
+#lasers { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.laser { 
+    position: absolute; 
+    width: 1400px;
+    height: 2.8px; 
+    filter: blur(1px) brightness(3.5); 
+    opacity: 0; 
+    animation: swing 3s linear infinite, strobe 0.07s linear infinite; 
+}
+.laser-left { 
+    background: linear-gradient(90deg, var(--color) 0%, var(--color) 15%, transparent 100%); 
+}
+.laser-right { 
+    background: linear-gradient(90deg, transparent 0%, var(--color) 85%, var(--color) 100%); 
+}
+@keyframes swing { 
+    0%{transform:rotate(var(--angle-start));}
+    50%{transform:rotate(var(--angle-end));}
+    100%{transform:rotate(var(--angle-start));} 
+}
+@keyframes strobe { 
+    0%{opacity:0;}
+    100%{opacity:1;} 
+}
+.stage-video{
+    margin-top: -10px;
+    width: 1000px;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+.Music{
+    margin: 0 auto;
+    margin-top:100px;
+    width: 1400px;
+    height: 1000px;
+}
+.yyjs{
+    margin: 0 auto;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    color: wheat;
+    font-size: 46px;
+}
+.navM{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    width: 660px;
+    height: 40px;
+}
+.navM div{
+    margin-top: 10px;
+    text-align: center;
+    width: 185px;
+    height: 42px;
+    background-color: red;
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navM div:nth-child(1){
+    margin-top: 10px;
+    text-align: center;
+    width: 185px;
+    height: 42px;
+    background-color: rgb(0, 208, 255);
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navM div:nth-child(1):hover {
+    animation: bounce 0.4s ease infinite alternate;
+}
+.navM div:nth-child(2){
+    margin-top: 10px;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    background-color: rgb(0, 255, 225);
+    line-height: 40px;
+    margin-left: 40px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navM div:nth-child(2):hover {
+    animation: scalePulse 0.4s ease infinite alternate;
+}
+.navM div:nth-child(3){
+    margin-top: 10px;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    background-color: rgb(255, 0, 115);
+    line-height: 40px;
+    margin-left: 40px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navM div:nth-child(3):hover {
+    animation: shake 0.12s ease infinite;
+}
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-8px); }
+}
+@keyframes scalePulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+}
+@keyframes shake {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-4px) rotate(-1deg); }
+    50%  { transform: translateX(0); }
+    75%  { transform: translateX(4px) rotate(1deg); }
+    100% { transform: translateX(0); }
+}
+
+.boxm1, .boxm2, .boxm3{
+    margin: 80px auto 0;
+    width: 1400px;
+    height: 650px;
+    position: relative;
+}
+
+.item,.item2{
+    width: 640px;
+    float: left;
+    margin: 0 20px 40px 0;
+    padding: 20px;
+    position: relative;
+}
+.item{
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.item2{
+    height: 200px;
+    display: block;
+}
+.item:nth-child(3){
+    height: 200px;
+    display: block;
+}
+.boxm1::after, .boxm2::after, .boxm3::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.record-player{
+    width: 260px;
+    height: 260px;
+    background: #222;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 25px;
+    overflow: hidden;
+}
+.record, .record2, .record3, .record4, .record5, .record6{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.record{ background: url('./img/BUTTERFLIES.avif') center/cover; }
+.record2{ background: url('./img/InsideOurHearts.jpg') center/cover; }
+.record3{ background: url('./img/Boom.png') center/cover; }
+.record4{ background: url('./img/ToldYouSo.png') center/cover; }
+.record5{ background: url('./img/VOODOO.avif') center/cover; }
+.record6{ background: url('./img/Hypnotising.png') center/cover; }
+
+.record.rotate,
+.record2.rotate,
+.record3.rotate,
+.record4.rotate,
+.record5.rotate,
+.record6.rotate{
+    animation: spin 10s linear infinite;
+}
+@keyframes spin{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+.record::after{
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.song-name{margin-left: 8px; font-size: 40px; font-weight: bold; margin-top: -140px; color: green; }
+.song-name2{ font-size: 32px; font-weight: bold; margin-top: -130px; color: rgb(255, 115, 0); }
+.song-name3{ font-size: 40px; font-weight: bold; margin-top: -140px; color: #00f; }
+.song-name4{ font-size: 38px; font-weight: bold; margin-top: -130px; color: #90f; }
+.song-name5{  margin-left: 50px;font-size: 40px; font-weight: bold; margin-top: -140px; color: #ff0073; }
+.song-name6{ margin-left: 44px;font-size: 40px; font-weight: bold; margin-top: -140px; color: #ff5722; }
+
+.singer{ font-size: 26px; color: #ffffff; margin-left: 70px; margin-bottom: 15px; }
+.singer2{ font-size: 26px; color: #ffffff; margin-left: 90px; margin-bottom: 15px; }
+.singer3{ font-size: 26px; color: #ffffff; margin-left: 70px; margin-bottom: 15px; }
+.singer4{ font-size: 26px; color: #ffffff; margin-left: 65px; margin-bottom: 15px; }
+.singer5{ font-size: 26px; color: #ffffff; margin-left: 40px; margin-bottom: 15px; }
+.singer6{ font-size: 26px; color: #ffffff; margin-left: 110px; margin-bottom: 15px; }
+
+.intro{ font-size: 20px; color: #9dffb2; }
+.intro2{ font-size: 20px; color: #efb768; }
+.intro3{ font-size: 20px; color: #9df2ff; }
+.intro4{ font-size: 20px; color: #e2a9ff; }
+.intro5{ font-size: 20px; color: #ffb3d9; }
+.intro6{ font-size: 20px; color: #ffccbc; }
+
+.btns{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.play-icon{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 48px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    margin:0;
+    transition: all 0.25s ease;
+}
+
+.lyric-box{
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    text-align: center;
+}
+.lyric-list{
+    transition: margin-top 0.4s ease;
+}
+.lyric-line{
+    height: 50px;
+}
+.en{
+    font-size: 20px;
+    color: #888;
+    display: block;
+    margin-bottom: 4px;
+}
+.cn{
+    margin-top: -8px;
+    font-size: 16px;
+    color: #aaa;
+    display: block;
+}
+#lyric1 .lyric-line.active .en{ color: #28a745; font-size: 24px; font-weight: bold; }
+#lyric2 .lyric-line.active .en{ color: #ff9800; font-size: 24px; font-weight: bold; }
+#lyric3 .lyric-line.active .en{ color: #00f; font-size: 24px; font-weight: bold; }
+#lyric4 .lyric-line.active .en{ color: #90f; font-size: 24px; font-weight: bold; }
+#lyric5 .lyric-line.active .en{ color: #ff0073; font-size: 24px; font-weight: bold; }
+#lyric6 .lyric-line.active .en{ color: #ff5722; font-size: 24px; font-weight: bold; }
+
+audio{
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+.wave-box{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:40px;
+    display:none;
+    pointer-events:none;
+}
+#waveCanvas, #waveCanvas2, #waveCanvas3{
+    width:100%;
+    height:100%;
+}
+
+
+.whbox {
+  position: relative;
+  width: 100%;
+  height: 8400px;  
+  background-color: #0a0a1a;
+  overflow: visible; 
+  opacity: 0;
+  transform: translateY(350px) scale(0.8);
+  filter: blur(8px);
+  border-radius: 12px;
+  transition: 
+    all 1.8s cubic-bezier(0.2, 1, 0.3, 1),
+    background-color 2s ease 0.4s;
+}
+
+.whbox::before {
+  content: '';
+  position: absolute;
+  inset: -50px;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    rgba(180, 0, 255, 0.45),
+    rgba(0, 220, 255, 0.45),
+    rgba(0, 255, 180, 0.45),
+    transparent
+  );
+  transform: translateX(-120%);
+  transition: transform 2.4s cubic-bezier(0.2, 1, 0.3, 1);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: screen;
+}
+
+.whbox.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+  background-color: #ffffff;
+  box-shadow: 
+    0 0 130px rgba(180,0,255,0.35),
+    0 0 200px rgba(0,255,180,0.25);
+}
+.whbox.show::before {
+  transform: translateX(120%);
+}
+
+.whbox:not(.show) {
+  background-color: #0a0a1a !important;
+  transform: translateY(-200px) scale(0.9);
+  opacity: 0;
+  filter: blur(12px);
+}
+
+/* 只控制头部图片，不影响wb */
+.whbox header{
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.whbox header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.whbox header img:nth-child(1) {
+    z-index: 1;
+}
+.whbox header img:nth-child(2) {
+    margin-top: 15px;
+    z-index: 2;
+}
+.mouse-parallax {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  /* 保证不破坏你原有的定位 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.whbox_box1, .whbox_box2 {
+    position: absolute; 
+    z-index: 4; 
+    line-height: 40px; 
+    text-align: center; 
+    opacity: 1;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.whbox_box1 {
+    margin-top: 120px;
+    width: 760px;
+    height: 130px;
+    line-height: 130px; 
+}
+.whbox_box1 span {
+    color: white;
+    font-size: 136px;
+    font-weight: 700;
+}
+.whbox_box2 {
+    top: 75%;
+    width: 280px;
+    height: 60px;
+    transform: translate(-50%, calc(-50% + 100px));
+    color: white;
+    line-height: 60px;
+    background-color: white;
+    cursor: pointer;
+}
+.whbox_box2 span {
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 700;
+}
+.box4{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1900px;
+    height: 4000px;
+    /* background-color: #0000ff; */
+}
+.tup1{
+    margin-left: 200px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.tup2{
+    position: absolute;
+    top: 420px;
+    left: 820px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.wenz1{
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    width: 700px;
+    height: 80px;
+    font-size: 60px;
+}
+.tup3{
+    position: absolute;
+    top: 820px;
+    left: 480px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.tup4{
+    position: absolute;
+    top: 750px;
+    left: 140px;
+    z-index: -1;
+    filter: blur(4px); 
+    transform: scale(1.05) translateY(280px);
+    opacity: 0;
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.wenz2 {
+    position: absolute;
+    top: 700px;
+    left: 390px;
+    font-size: 280px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: transparent;
+    z-index: 10;
+    mix-blend-mode: xor;
+    -webkit-text-stroke: 4px #ee8ed6;
+    text-stroke: 4px #f4caef;
+    transition: transform 0.3s ease;
+}
+.tup5{
+    position: absolute;
+    top: 1000px;
+    left: 880px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.tup6{
+    position: absolute;
+    top: 1350px;
+    left: 180px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.wenz3{
+    position: absolute;
+    top: 1330px;
+    left: 100px;
+    width: 700px;
+    height: 80px;
+    font-size: 200px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 4px #2ef1ff;
+    white-space: nowrap;
+    overflow: visible;
+    display: block;
+    transition: transform 0.3s ease;
+}
+/* 粉色 LOVE 专用样式 */
+.wenz3 .love {
+    -webkit-text-stroke: 4px #ff69b4; /* 粉红色 */
+    color: transparent;
+}
+.wenz4{
+    position: absolute;
+    top: 1700px;
+    left: 960px;
+    width: 700px;
+    height: 80px;
+    font-size: 60px;
+}
+.tup7{
+    position: absolute;
+    top: 1800px;
+    left: 380px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.wenz5{
+    position: absolute;
+    top: 2400px;
+    left: 570px;
+    width: 700px;
+    height: 80px;
+    font-size: 120px;
+    font-weight: 900;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    display: block;
+}
+
+.wenz5 .i {
+    color: #2ef1ff;
+}
+.wenz5 .love {
+    color: #ff69b4;
+}
+.wenz5 .family {
+    position: relative;
+    background: linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);
+    background-size: 700% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorLoop 4s linear infinite;
+}
+.wenz5 .family::after {
+    content: "my family";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: blur(6px);
+    background: linear-gradient(90deg, red, yellow, lime, cyan,pink, blue, magenta, red);
+    background-size: 700% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorLoop 4s linear infinite;
+    z-index: -1;
+}
+
+@keyframes colorLoop {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+}
+.tup8{
+    position: absolute;
+    top: 2600px;
+    left: 100px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.tup9{
+    position: absolute;
+    top: 2600px;
+    left: 1200px;
+    opacity: 0;
+    transform: translateY(280px);
+    transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.tup10{
+    position: absolute;
+    top: 2650px;
+    left: 980px;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    transform: rotate(45deg);
+    animation: heartbeat 1s ease-in-out infinite;
+}
+
+.tup10::before,
+.tup10::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+}
+.tup10::before {
+    top: -50px;
+    left: 0;
+}
+.tup10::after {
+    top: 0;
+    left: -50px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+        transform: rotate(45deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+.sz1{
+    position: absolute;
+    top: 1850px;
+    left: 1200px;
+    font-size: 100px;
+    font-family: monospace;
+    color: #333;
+}
+.sz1 .bit-1 {
+    color: #0f0;
+}
+
+.tup1.show, .tup2.show, .tup3.show, .tup4.show,
+.tup5.show, .tup6.show, .tup7.show, .tup8.show, .tup9.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wenz6 {
+    position: absolute;
+    top: 3200px;
+    left: 640px;
+    width: 700px;
+    height: 80px;
+    font-size: 70px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible; 
+}
+.times-box{
+    position: absolute;
+    top: 3350px;
+    left: 750px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.times-btn{
+    width: 60px;
+    height: 80px;
+    font-size: 40px;
+    font-family: "Digital-7", "Courier New", monospace;
+    background: #000;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    border: 4px solid #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.times{
+    width: 400px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 90px;
+    font-family: "Digital-7", "Courier New", monospace;
+    white-space: nowrap;
+    text-align: center;
+    background: #000;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    border: 4px solid #333;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(0,255,0,0.2);
+    overflow: hidden;
+}
+
+.times-box{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Digital-7";
+    src: local("Courier New");
+}
+
+/* 外层：只控制透明度，**不修改任何定位**，绝对不跑位 */
+.timsa, .timsb, .timsc, .timsd, .timse, .timsf, .timsg, .timsh, .timsi, .timsj, .timsk, .timsl, .timsm, .timsn {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+.timsa.active, .timsb.active, .timsc.active, .timsd.active, .timse.active,
+.timsf.active, .timsg.active, .timsh.active, .timsi.active, .timsj.active,
+.timsk.active, .timsl.active, .timsm.active, .timsn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* 只抖动图片和文字，**不带动外层盒子**，整体位置纹丝不动 */
+.active img,
+.active [class^="wenz"] {
+    animation: shakeOnce 0.3s ease-out;
+}
+
+/* 增大抖动幅度 */
+@keyframes shakeOnce {
+    0% { transform: translate(0); }
+    25% { transform: translate(-1.5px, 1.5px); }
+    50% { transform: translate(1.5px, -1.5px); }
+    75% { transform: translate(-0.8px, 0); }
+    100% { transform: translate(0); }
+}
+
+/* 图片立体效果，不影响整体位置 */
+img {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.8);
+}
+
+/* 文字立体阴影 */
+.wenz7,.wenz8,.wenz9,.wenz10,.wenz11,.wenz12,.wenz13,.wenz14,
+.wenz15,.wenz16,.wenz17,.wenz18,.wenz19,.wenz20,.wenz21,.wenz22,
+.wenz23,.wenz24,.wenz25,.wenz26,.wenz27,.wenz28,.wenz29,.wenz30,
+.wenz31,.wenz32,.wenz33 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* ========== 下面你原本所有 top/left 完全原样保留，一字不改 ========== */
+.wenz7{
+    position: absolute;
+    top: 3500px;
+    left: 810px;
+    width: 700px;
+    height: 80px;
+    font-size: 70px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible; 
+}
+.tup11{
+    position: absolute;
+    top: 3630px;
+    left: 760px;
+}
+.wenz8{
+    position: absolute;
+    top: 3500px;
+    left: 820px;
+    width: 700px;
+    height: 80px;
+    font-size: 70px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible; 
+}
+.tup12{
+    position: absolute;
+    top: 3630px;
+    left: 760px;
+}
+.wenz9{
+    position: absolute;
+    top: 3500px;
+    left: 660px;
+    width: 700px;
+    height: 80px;
+    font-size: 70px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup13{
+    position: absolute;
+    top: 3630px;
+    left: 760px;
+}
+.wenz10{
+    position: absolute;
+    top: 3500px;
+    left: 630px;
+    width: 700px;
+    height: 80px;
+    font-size: 70px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup14{
+    position: absolute;
+    top: 3630px;
+    left: 770px;
+}
+.wenz11{
+    position: absolute;
+    top: 3500px;
+    left: 530px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup15{
+    position: absolute;
+    top: 3630px;
+    left: 550px;
+}
+.wenz12{
+    position: absolute;
+    top: 3500px;
+    left: 1125px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup16{
+    position: absolute;
+    top: 3630px;
+    left: 1100px;
+}
+.wenz13{
+    position: absolute;
+    top: 3500px;
+    left: 600px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup17{
+    position: absolute;
+    top: 3630px;
+    left: 550px;
+}
+.wenz14{
+    position: absolute;
+    top: 3500px;
+    left: 1200px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup18{
+    position: absolute;
+    top: 3630px;
+    left: 1100px;
+}
+.wenz15{
+    position: absolute;
+    top: 3500px;
+    left: 580px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup19{
+    position: absolute;
+    top: 3630px;
+    left: 550px;
+}
+.wenz16{
+    position: absolute;
+    top: 3500px;
+    left: 1170px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup20{
+    position: absolute;
+    top: 3630px;
+    left: 1100px;
+}
+.wenz17{
+    position: absolute;
+    top: 3500px;
+    left: 580px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup21{
+    position: absolute;
+    top: 3630px;
+    left: 550px;
+}
+.wenz18{
+    position: absolute;
+    top: 3500px;
+    left: 1180px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup22{
+    position: absolute;
+    top: 3630px;
+    left: 1100px;
+}
+.wenz19{
+    position: absolute;
+    top: 3500px;
+    left: 580px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup23{
+    position: absolute;
+    top: 3630px;
+    left: 575px;
+}
+.wenz20{
+    position: absolute;
+    top: 3500px;
+    left: 1100px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup24{
+    position: absolute;
+    top: 3630px;
+    left: 1100px;
+}
+.wenz21{
+    position: absolute;
+    top: 3500px;
+    left: 625px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup25{
+    position: absolute;
+    top: 3630px;
+    left: 550px;
+}
+.wenz22{
+    position: absolute;
+    top: 3500px;
+    left: 1180px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup26{
+    position: absolute;
+    top: 3630px;
+    left: 1100px;
+}
+.wenz23{
+    position: absolute;
+    top: 3500px;
+    left: 615px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup27{
+    position: absolute;
+    top: 3630px;
+    left: 550px;
+}
+.wenz24{
+    position: absolute;
+    top: 3500px;
+    left: 1160px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup28{
+    position: absolute;
+    top: 3630px;
+    left: 1100px;
+}
+.wenz25{
+    position: absolute;
+    top: 3500px;
+    left: 455px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup29{
+    position: absolute;
+    top: 3630px;
+    left: 360px;
+}
+.wenz26{
+    position: absolute;
+    top: 3500px;
+    left: 860px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup30{
+    position: absolute;
+    top: 3630px;
+    left: 800px;
+}
+.wenz27{
+    position: absolute;
+    top: 3500px;
+    left: 1290px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup31{
+    position: absolute;
+    top: 3630px;
+    left: 1240px;
+}
+.wenz28{
+    position: absolute;
+    top: 3500px;
+    left: 410px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup32{
+    position: absolute;
+    top: 3630px;
+    left: 400px;
+}
+.wenz29{
+    position: absolute;
+    top: 3500px;
+    left: 885px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup33{
+    position: absolute;
+    top: 3630px;
+    left: 820px;
+}
+.wenz30{
+    position: absolute;
+    top: 3500px;
+    left: 1325px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup34{
+    position: absolute;
+    top: 3630px;
+    left: 1240px;
+}
+.wenz31{
+    position: absolute;
+    top: 3500px;
+    left: 470px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup35{
+    position: absolute;
+    top: 3630px;
+    left: 400px;
+}
+.wenz32{
+    position: absolute;
+    top: 3500px;
+    left: 825px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup36{
+    position: absolute;
+    top: 3630px;
+    left: 820px;
+}
+.wenz33{
+    position: absolute;
+    top: 3500px;
+    left: 1350px;
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: visible;
+}
+.tup37{
+    position: absolute;
+    top: 3630px;
+    left: 1240px;
+}
+.zjbox{
+    position: relative;
+    position: absolute;
+    top: 4200px;
+    left: 50px;
+    width: 1800px;
+    height: 2800px;
+}
+.zjz1{
+    position: absolute;
+    top: -80px;
+    left: 320px;
+    font-size: 400px;
+}
+.zjt1 {
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+    transform: rotate(20deg);
+}
+.zjt1:hover{
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+    transform: rotate(20deg);
+}
+.zjz2{
+    position: absolute;
+    top: 800px;
+    left: 260px;
+    font-size: 200px;
+    white-space: nowrap;
+    width: auto;
+    transform: rotate(30deg);
+    z-index: 1;
+    color: transparent;
+    -webkit-text-stroke: 3px #00ffff;
+    text-stroke: 3px #00ffff;
+    position: relative;
+}
+.zjz2::before{
+    content: "Pro";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00ffff;
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+}
+.zjt2{
+    position: absolute;
+    top: 700px;
+    left: 1000px;
+    transform: rotate(10deg);
+}
+.zjt3{
+    position: absolute;
+    top: 700px;
+    left: 600px;
+}
+.zjz3{
+    position: absolute;
+    top: 1100px;
+    left: 600px;
+    transform: rotate(-30deg);
+    font-size: 300px;
+    z-index: 1;
+}
+
+.mu {
+    color: transparent;
+    -webkit-text-stroke: 4px #ff69b4;
+    text-shadow: 0 0 10px rgba(255,105,180,0.4);
+}
+
+.sic {
+    color: #ff69b4;
+    text-shadow: 0 0 10px rgba(255,105,180,0.4);
+}
+.zjt4{
+    position: absolute;
+    top: 1400px;
+    left: 600px;
+    transform: rotate(-20deg);
+}
+.zjt4:hover{
+    position: absolute;
+    top: 1400px;
+    left: 600px;
+    transform: rotate(-20deg);
+    z-index: 1;
+}
+.zjt5{
+    position: absolute;
+    top: 1000px;
+    left: 340px;
+    transform: rotate(-6deg);
+}
+.zjt6{
+    position: absolute;
+    top: 1300px;
+    left: 1050px;
+    transform: rotate(6deg);
+}
+.zjt7{
+    position: absolute;
+    top: 1800px;
+    left: 1050px;
+    transform: rotate(6deg);
+}
+.zjz4{
+    position: absolute;
+    top: 2000px;
+    left: 400px;
+    transform: rotate(10deg);
+    font-size: 300px;
+    white-space: nowrap;
+    width: auto;
+    color: transparent;
+    -webkit-text-stroke: 4px #00ffcc;
+    text-stroke: 4px #00ffcc;
+}
+.zjt8{
+    position: absolute;
+    top: 2200px;
+    left: 450px;
+    transform: rotate(-6deg);
+    z-index: -1;
+}
+
+
+/* zjt1~zjt8 滚动动画，严格保留原有旋转角度 */
+.zjt1, .zjt2, .zjt3, .zjt4, .zjt5, .zjt6, .zjt7, .zjt8 {
+  opacity: 0;
+  transition: all 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* 初始隐藏：原有角度 + 向下偏移 */
+.zjt1 { transform: rotate(20deg) translateY(300px); }
+.zjt2 { transform: rotate(10deg) translateY(300px); }
+.zjt3 { transform: translateY(300px); }
+.zjt4 { transform: rotate(-20deg) translateY(300px); }
+.zjt5 { transform: rotate(-6deg) translateY(300px); }
+.zjt6 { transform: rotate(6deg) translateY(300px); }
+.zjt7 { transform: rotate(6deg) translateY(300px); }
+.zjt8 { transform: rotate(-6deg) translateY(300px); }
+
+/* 划入显示：角度不变，回到原位 */
+.zjt1.show { opacity: 1; transform: rotate(20deg) translateY(0); }
+.zjt2.show { opacity: 1; transform: rotate(10deg) translateY(0); }
+.zjt3.show { opacity: 1; transform: translateY(0); }
+.zjt4.show { opacity: 1; transform: rotate(-20deg) translateY(0); }
+.zjt5.show { opacity: 1; transform: rotate(-6deg) translateY(0); }
+.zjt6.show { opacity: 1; transform: rotate(6deg) translateY(0); }
+.zjt7.show { opacity: 1; transform: rotate(6deg) translateY(0); }
+.zjt8.show { opacity: 1; transform: rotate(-6deg) translateY(0); }
+
+
+.bbox{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+}
+.bbox2{
+    margin: 0 auto;
+    width: 1400px;
+    height: 200px;
+}
+.mane{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    background: radial-gradient(circle, #fff 0%, rgba(255,255,255,0.08) 70%, transparent 100%);
+    background-size: 100% 100%;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: breathe 1.4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+    0%   { background-size: 80% 80%;  filter: brightness(0.8); }
+    50%  { background-size: 40% 40%; filter: brightness(2.2); }
+    100% { background-size: 80% 80%;  filter: brightness(0.8); }
+}
+
